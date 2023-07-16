@@ -19,7 +19,7 @@ $feedback = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <div class="card-body text-center">
       <?php echo $item['body']; ?>
       <div class="text-secondary mt-2">
-        By <?php echo $item['name']; ?>
+        <?php echo 'By ' . $item['name'] . ' on ' . $item['date']; ?>
       </div>
     </div>
   </div>
